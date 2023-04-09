@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ryo Nakajimaのポートフォリオです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- タイトル -->
+    <title>ryo nakajima's self-introduction site</title>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <h1 class="maintitle" href="index.html">MY PORTFOLIO</h1>
+      <!-- ナビゲーションメニュー -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href='#About'>About</a></li>
+          <li><a href='#Myskills'>MySkills</a></li>
+          <li><a href='#Contact'>Contact</a></li>
+        </ul>
+      </nav>
+      <!-- form -->
+      <div class="form-select">
+        <form id="form">
+          <select name="select">
+            <option value="index.html">日本語</option>
+            <option value="index-en.html">English</option>
+          </select>
+        </form>
+      </div>
+    </header>
+    <!-- ヘッダー終了 -->
+    <!-- メイン -->
+    <main>
+      <div id="mainimg">
+        <!-- メイン画像 -->
+        <!-- コメントアウト　<img src="images/main-image.jpg" alt="南国のビーチの画像" class="beachpic"> -->
+        <section id="carousel-section">
+          <div class="carousel">
+            <div>
+              <img class="carouselImg mainpic" src="images/main-image.jpg" alt="南国のビーチの写真">
+            </div>
+            <div>
+              <img class="carouselImg mainpic" src="images/main-image2.jpg" alt="離陸する飛行機の写真">
+            </div>
+            <div>
+              <img class="carouselImg mainpic" src="images/main-image3.jpg" alt="コーディングイメージの写真">
+            </div>
+          </div>
+        </section>
+      </div>
+     <section>
+      <!-- ここからAbout -->
+      <section id="About">
+        <div id="aboutarea">
+          <h1 class="subtitle">About</h1>
+            <img src="images/aboutme.jpg" alt="自分の写真" class="aboutpic">
+              <ul class="about-introduce">
+                <li>Birthplace: Nagoya City, Aichi Prefecture</li>
+                <li>Birthdate: July 25, 1994</li>
+                <li>Favorite food: Soba, sweets</li>
+                <li>Profession: Business Planning</li>
+                <li>Hobbies: Watching overseas soccer games, watching videos (gadget videos), reading books, taking pictures of airplanes, etc.</li>
+                <li>Start of learning: I want to create a web application service myself</li>
+                <li>System I want to create: Business improvement system application</li>
+              </ul>
+        </div>
+      </section>
+      
+      <!-- ここまでAbout -->
+      <!-- ここからMySkills -->
+      <section id="Myskills">
+        <h1 class="subtitle">MySkills</h1>
+          <div class="studying">
+            <p class="skills">＜Currently studying＞</p>
+            <div class="imgs">
+             <img width="300" height="300" src="images/html5.svg" alt="htmlのアイコン">
+             <img width="300" height="300" src="images/css3.svg" alt="CSSのアイコン">
+             <img width="300" height="300" src="images/js.svg" alt="JavaScriptのアイコン">
+          </div>
+        </div>
+          <div class="will-study">
+            <p class="skills">＜planning to study＞</p>
+             <div class="imgs">
+              <img width="300" height="300" src="images/php.svg" alt="phpのアイコン">
+              </div>
+          </div>
+          <div class="interest">
+           <p class="skills">＜interested in technology or language＞</p>
+            <div class="imgs">
+              <img width="300" height="300" src="images/aws.svg" alt="awsのアイコン">
+              <img width="300" height="300" src="images/swift.svg" alt="swiftのアイコン">
+              <img width="300" height="300" src="images/raspberry-pi.svg" alt="ラズパイのアイコン">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ここからコンタクトフォーム -->
+      <section id="Contact" class="contact-box">
+        <h1 class="subtitle">CONTACT</h1>
+        <form>
+          <p>Your Name：<input type="text" name="NAME" class="yourname"></p>
+          <p>E-Mail：<input type="text" name="email" class="youremail"></p>
+          <input type="submit" value="送信する" class="sub-button">
+        </form>
+      </section>
+     </section>
+    </main>
+
+    <!-- ここからフッター -->
+    <footer>
+      <div class="linkbox">
+        <div class="sns-Link">
+          <ul>
+            <li><a href="https://twitter.com/home?lang=ja"><img src="images/twitter_logo_bk.svg" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/Instagram_Glyph_Black.svg" alt="Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <small>&copy; 2023 Ryo Nakajima</small>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
